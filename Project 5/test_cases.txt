@@ -1,0 +1,18 @@
+mad			scientist	-4W
+dearaged		robot		3
+nafarious		plot		0
+life			love		12
+			sorrow		4W
+laugh					5W
+					6W
+heart3			blood		3W
+APPLE			banana		2
+deranged		robot		5W
+deranged		psycopath	1
+deranged		robot		5W
+love			life		4W
+love			forgotten	7
+love			life		12W
+thisisareallylongone	string		4
+
+

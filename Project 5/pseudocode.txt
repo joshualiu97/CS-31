@@ -1,0 +1,38 @@
+if nPatters is zero or less than zero
+	return 0
+remove all strings with non-alphabetical characters for word1 and word2(decrease nPatterns)
+convert all the strings to lowercase in both word1 and word2
+for word1 and word2, if there is an emtpy string
+	remove that row of elements for word1 and word2(decrease nPatterns)
+if separation is negative
+	remove that row of elements(decrease nPatterns)
+if a string in word1 is equal to a string in word1
+	if a string in word2 of the same element is the same as a string in word2 of the corresponding element
+		if the first row has a greater separation, remove the second row(decrease nPatterns)
+		else, remove the first row(decrease nPatterns)
+if a string in word1 is equal to a string in word2
+	if a string in word1 of the same element is the same as a string in word2 of the corresponding element
+		if the first row has a greater separation, remove the second row(decrease nPatterns)
+		else, remove the first row(decrease nPatterns)
+if a string in word2 is equal to a string in word2
+	if a string in word1 of the same element is the same as a string in word1 of the corresponding element
+		if the first row has a greater separation, remove the second row(decrease nPatterns)
+		else, remove the first row(decrease nPatterns)
+if a string in word2 is equal to a string in word1
+	if a string in word2 of the same element is the same as a string in word1 of the corresponding element
+		if the first row has a greater separation, remove the second row(decrease nPatterns)
+		else, remove the first row(decrease nPatterns)
+return nPatterns
+
+declare array size for STORE_CHARS
+declare int variable matches to count the number of matches
+copy document string into an array that can be manipulated
+remove all nonalphabetical characters in the array
+copy the same string into another array and add spaces before and after the string in order for the program to process the string
+cycle through the document, looking for a character that matches the first word in word1
+	if word1 does not match a word in the document, move onto next word in word1	
+	if there is a match, create a lower and upper bound to check for word2 that corresponds to word1
+		if lower bound is less than zero, then lower bound is equal to zero
+		if upper bound is greater than the number of words in the document, then upper bounds is equal to this number
+		if a word in word2 matches with the word1 within the separation distance, increment matches and break out of loop to investigate next pattern until reaches end of word1
+return matches
